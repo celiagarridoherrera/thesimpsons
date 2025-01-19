@@ -1,0 +1,85 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr);    
+    grid-gap: 10px;
+    width: 100%;
+    margin: 20px auto;
+    max-width: 1200px;
+    max-height: 1000px;
+}
+
+#item0 {
+grid-column: span 2;
+grid-row: span 1;
+font-size: 80px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: yellow;
+text-shadow: 
+    -2px -2px 0 black,
+     2px -2px 0 black, 
+    -2px  2px 0 black,  
+     2px  2px 0 black;
+font-weight: lighter;
+width: 80%;
+height: 80%;
+text-align: center;
+justify-self: center;
+align-self: center;
+border: 3px solid grey;
+}
+
+#item1, #item6, #item10 {
+grid-column: span 2;
+grid-row: span 1;
+justify-self: center;
+align-self: center;
+border: 3px solid grey;
+}
+
+#item2, #item3, #item4, #item5, #item7, #item8, #item9 {
+grid-column: span 1; 
+grid-row: span 1; 
+justify-self: center;
+align-self: center;
+border: 3px solid grey;   
+}
+
+#item4 {
+grid-column: span 1;
+grid-row: span 2;
+justify-self: center;
+align-self: center;
+border: 3px solid grey;
+}
+
+.top{
+width: 80%;
+height: 80%;
+
+}
+
+.middle{
+width: 335px;
+height: 200px;
+}
+
+.poster{
+width: 335px;
+height: 448px;
+}
+
+.bottom{
+width: 100%;
+height: 100%;
+
+}
+
+.character, .character1{
+width: 150px;
+height: 200px;
+}
+
+.character{
+object-fit: cover;
+}
